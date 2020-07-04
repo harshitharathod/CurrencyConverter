@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Toolbar */
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    flex-grow: 1;
+    margin-top: 8px;
+  } 
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .converter{
+         border-radius: 5px;
+        border: 2px solid teal;
+         text-align:center;
+         margin-left: 25%;
+         margin-top: 1%;
+         width: 45%;
+         margin-bottom: 1%;
+
+         
+    
+      }
+      .main{
+
+          background-color:lightblue;
+      }
+  

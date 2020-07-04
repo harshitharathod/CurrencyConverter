@@ -1,0 +1,9 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "CurrencyConversion"]
+	url = https://github.com/harshitha275/CurrencyConversion.git
+	fetch = +refs/heads/*:refs/remotes/CurrencyConversion/*

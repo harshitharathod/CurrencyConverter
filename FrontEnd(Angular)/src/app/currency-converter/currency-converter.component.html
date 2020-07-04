@@ -1,0 +1,51 @@
+<div class="main">
+<div class="converter">
+
+        <h2>CURRENCY CONVERTER</h2>
+    
+    <div class="container text-center">
+       <mat-form-field class="example-full-width">
+        <mat-label>Amount</mat-label>
+        <input matInput placeholder="Ex. 2" [(ngModel)]="amount">
+       </mat-form-field>
+    
+      
+    <div class="container text-center">
+      <mat-form-field class="example-full-width">
+       <mat-label>From</mat-label>
+       <input matInput value="EUR" [(ngModel)]="EUR"  >
+      </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+                <mat-label>To</mat-label>
+                <mat-select [(ngModel)]="selectedValue" (ngModelChange)="onDisplayingCurrency()"  >
+                  <mat-option value="USD">USD</mat-option>
+                  <mat-option value="CHF">CHF</mat-option>
+               </mat-select>
+            </mat-form-field>
+    
+            <div>
+              <button mat-raised-button color="primary" (click)="convert()">
+             Convert
+           </button>
+           <p *ngIf="show">
+             {{amount}} {{EUR}}= {{result}} {{selectedValue}}
+           </p>
+          </div>
+    
+       
+    </div>
+    </div>
+</div>
+
+
+<div align="right">
+        <button mat-raised-button  (click)="history()">
+            View Conversion History
+        </button>
+      </div>
+
+</div>
+
+
+

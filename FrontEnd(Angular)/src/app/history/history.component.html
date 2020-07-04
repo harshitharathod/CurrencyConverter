@@ -1,0 +1,21 @@
+
+<div class="example-container">
+    <mat-table [dataSource]="currencyDataSource">
+        <ng-container matColumnDef="Conversion_from">
+          <mat-header-cell *matHeaderCellDef [ngClass]="'heading'"> From</mat-header-cell>
+          <mat-cell *matCellDef="let CurrenciesHistory"> {{CurrenciesHistory.conversion_from}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Conversion_to">
+          <mat-header-cell *matHeaderCellDef [ngClass]="'heading'"> To </mat-header-cell>
+          <mat-cell *matCellDef="let CurrenciesHistory"> {{CurrenciesHistory.conversion_to}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Date">
+                <mat-header-cell *matHeaderCellDef [ngClass]="'heading'"> Date</mat-header-cell>
+                <mat-cell *matCellDef="let CurrenciesHistory"> {{CurrenciesHistory.date}} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>     
+</mat-table>
+
+</div>
+  
